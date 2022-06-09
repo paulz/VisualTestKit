@@ -27,17 +27,10 @@ typedef NS_OPTIONS(NSUInteger, VTKAssertIDDecorations) {
     unsigned long long _vtkIDDecorationsMask;
 }
 
-// - (void).cxx_destruct;
 @property(readonly, nonatomic) unsigned long long vtkIDDecorationsMask; // @synthesize vtkIDDecorationsMask=_vtkIDDecorationsMask;
-@property(readonly, nonatomic) NSString *vtkAssertName; // @synthesize vtkAssertName=_vtkAssertName;
-- (BOOL)isEqual:(id)arg1;
-@property(readonly, copy) NSString *description;
-- (id)initWithName:(id)arg1 decorationMask:(unsigned long long)arg2;
+@property(readonly, nonatomic, nonnull) NSString *vtkAssertName; // @synthesize vtkAssertName=_vtkAssertName;
+- (nonnull id)initWithName:(nonnull id)arg1 decorationMask:(unsigned long long)arg2;
 
-// Remaining properties
-@property(readonly, copy) NSString *debugDescription;
-@property(readonly) unsigned long long hash;
-@property(readonly) Class superclass;
 
 @end
 

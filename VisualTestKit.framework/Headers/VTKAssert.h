@@ -4,8 +4,6 @@
 //  Copyright (C) 1997-2019 Steve Nygard.
 //
 
-#import <objc/NSObject.h>
-
 @class NSArray, NSString, VTKInternalConfiguration, XCTestCase;
 
 __attribute__((visibility("hidden")))
@@ -15,7 +13,6 @@ __attribute__((visibility("hidden")))
     VTKInternalConfiguration *_configuration;
 }
 
-// - (void).cxx_destruct;
 @property(copy, nonatomic) VTKInternalConfiguration *configuration; // @synthesize configuration=_configuration;
 @property(readonly, nonatomic) __weak XCTestCase *testCase; // @synthesize testCase=_testCase;
 - (void)assertView:(id)arg1 identifier:(id)arg2 filePath:(id)arg3 lineNumber:(unsigned long long)arg4;

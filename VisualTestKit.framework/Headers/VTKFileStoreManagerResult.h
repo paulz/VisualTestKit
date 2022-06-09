@@ -4,8 +4,6 @@
 //  Copyright (C) 1997-2019 Steve Nygard.
 //
 
-#import <objc/NSObject.h>
-
 #import <VisualTestKit/VTKStoreManagerSaveResult-Protocol.h>
 
 @class NSString, NSURL;
@@ -16,16 +14,10 @@ __attribute__((visibility("hidden")))
     NSURL *_rootFolderItemsURL;
 }
 
-// - (void).cxx_destruct;
 @property(readonly, nonatomic) NSURL *rootFolderItemsURL; // @synthesize rootFolderItemsURL=_rootFolderItemsURL;
 @property(readonly, nonatomic) NSString *saveDescription;
 - (id)initWithURL:(id)arg1;
 
-// Remaining properties
-@property(readonly, copy) NSString *debugDescription;
-@property(readonly, copy) NSString *description;
-@property(readonly) unsigned long long hash;
-@property(readonly) Class superclass;
 
 @end
 

@@ -4,8 +4,6 @@
 //  Copyright (C) 1997-2019 Steve Nygard.
 //
 
-#import <objc/NSObject.h>
-
 #import <VisualTestKit/VTKComparator-Protocol.h>
 
 @class NSString;
@@ -18,10 +16,8 @@ __attribute__((visibility("hidden")))
     unsigned long long _comparisonOptions;
 }
 
-// - (void).cxx_destruct;
 @property(nonatomic) unsigned long long comparisonOptions; // @synthesize comparisonOptions=_comparisonOptions;
 @property(retain, nonatomic) id <VTKColorDifferenceStrategy> strategy; // @synthesize strategy=_strategy;
-@property(readonly, copy) NSString *description;
 - (BOOL)_downscalesImages;
 - (BOOL)_drawAAInResults;
 - (BOOL)_ignoreAAInResults;
@@ -30,10 +26,6 @@ __attribute__((visibility("hidden")))
 - (id)compareImage:(id)arg1 withImage:(id)arg2;
 - (id)initWithStrategy:(id)arg1 comparisonOptions:(unsigned long long)arg2;
 
-// Remaining properties
-@property(readonly, copy) NSString *debugDescription;
-@property(readonly) unsigned long long hash;
-@property(readonly) Class superclass;
 
 @end
 

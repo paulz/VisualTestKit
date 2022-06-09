@@ -4,8 +4,6 @@
 //  Copyright (C) 1997-2019 Steve Nygard.
 //
 
-#import <objc/NSObject.h>
-
 @class NSArray, NSMutableArray, NSString;
 @protocol VTKComparator, VTKReferenceItemsSource, VTKStoreManager;
 
@@ -24,7 +22,6 @@ __attribute__((visibility("hidden")))
 
 + (id)_comparatorForStrategy:(unsigned long long)arg1 comparisonOptions:(unsigned long long)arg2;
 + (id)_referenceItemsSourceForType:(unsigned long long)arg1;
-// - (void).cxx_destruct;
 @property(retain, nonatomic) id <VTKComparator> cachedImageComparator; // @synthesize cachedImageComparator=_cachedImageComparator;
 @property(retain, nonatomic) id <VTKStoreManager> cachedStoreManager; // @synthesize cachedStoreManager=_cachedStoreManager;
 @property(retain, nonatomic) id <VTKReferenceItemsSource> cachedReferenceItemsSource; // @synthesize cachedReferenceItemsSource=_cachedReferenceItemsSource;
@@ -43,7 +40,6 @@ __attribute__((visibility("hidden")))
 @property(readonly, nonatomic) id <VTKComparator> imageComparator;
 @property(readonly, nonatomic) id <VTKStoreManager> storeManager;
 @property(readonly, nonatomic) id <VTKReferenceItemsSource> referenceItemsSource;
-- (id)copyWithZone:(struct _NSZone *)arg1;
 - (id)initWithReferenceItemsSource:(id)arg1 storeManager:(id)arg2 imageComparator:(id)arg3;
 - (id)init;
 

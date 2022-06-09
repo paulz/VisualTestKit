@@ -4,8 +4,6 @@
 //  Copyright (C) 1997-2019 Steve Nygard.
 //
 
-#import <objc/NSObject.h>
-
 #import <VisualTestKit/VTKStoreManagerItem-Protocol.h>
 #import <VisualTestKit/VTKTestAttachment-Protocol.h>
 
@@ -21,7 +19,6 @@ __attribute__((visibility("hidden")))
 }
 
 + (id)itemWithImage:(id)arg1 itemType:(unsigned long long)arg2;
-// - (void).cxx_destruct;
 @property(readonly, nonatomic) NSString *fileSufix; // @synthesize fileSufix=_fileSufix;
 @property(readonly, nonatomic) NSString *fileExtension; // @synthesize fileExtension=_fileExtension;
 @property(readonly, nonatomic) unsigned long long itemType; // @synthesize itemType=_itemType;
@@ -30,11 +27,6 @@ __attribute__((visibility("hidden")))
 - (id)fileNameWithTestID:(id)arg1;
 - (id)initWithData:(id)arg1 itemType:(unsigned long long)arg2;
 
-// Remaining properties
-@property(readonly, copy) NSString *debugDescription;
-@property(readonly, copy) NSString *description;
-@property(readonly) unsigned long long hash;
-@property(readonly) Class superclass;
 
 @end
 

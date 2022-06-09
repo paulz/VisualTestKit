@@ -4,8 +4,6 @@
 //  Copyright (C) 1997-2019 Steve Nygard.
 //
 
-#import <objc/NSObject.h>
-
 @class MISSING_TYPE, UIImage;
 
 __attribute__((visibility("hidden")))
@@ -45,8 +43,14 @@ __attribute__((visibility("hidden")))
 @property(readonly, nonatomic) UIImage *image;
 @property(readonly) unsigned long long pixelHeight;
 @property(readonly) unsigned long long pixelWidth;
-- (void)dealloc;
-- (id)initWithColorSpaceName:(struct __CFString *)arg1 contextType:(unsigned long long)arg2 width:(double)arg3 height:(double)arg4 scale:(double)arg5 bitsPerComponent:(unsigned long long)arg6 bytesPerPixel:(unsigned long long)arg7 bitmapInfo:(unsigned int)arg8;
 
+- (id)initWithColorSpaceName:(struct __CFString *)arg1
+                 contextType:(unsigned long long)arg2
+                       width:(double)arg3
+                      height:(double)arg4
+                       scale:(double)arg5
+            bitsPerComponent:(unsigned long long)arg6
+               bytesPerPixel:(unsigned long long)arg7
+                  bitmapInfo:(unsigned int)arg8;
 @end
 

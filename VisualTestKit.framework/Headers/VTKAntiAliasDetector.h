@@ -4,8 +4,6 @@
 //  Copyright (C) 1997-2019 Steve Nygard.
 //
 
-#import <objc/NSObject.h>
-
 @class VTKBitmapContext;
 @protocol VTKColorDifferenceStrategy;
 
@@ -17,7 +15,6 @@ __attribute__((visibility("hidden")))
     id <VTKColorDifferenceStrategy> _strategy;
 }
 
-// - (void).cxx_destruct;
 @property(retain, nonatomic) id <VTKColorDifferenceStrategy> strategy; // @synthesize strategy=_strategy;
 @property(retain, nonatomic) VTKBitmapContext *rightContext; // @synthesize rightContext=_rightContext;
 @property(retain, nonatomic) VTKBitmapContext *leftContext; // @synthesize leftContext=_leftContext;

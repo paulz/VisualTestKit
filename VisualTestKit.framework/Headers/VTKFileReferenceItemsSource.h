@@ -4,8 +4,6 @@
 //  Copyright (C) 1997-2019 Steve Nygard.
 //
 
-#import <objc/NSObject.h>
-
 #import <VisualTestKit/VTKReferenceItemsSource-Protocol.h>
 
 @class NSString;
@@ -16,15 +14,9 @@ __attribute__((visibility("hidden")))
     NSString *_itemsDirectory;
 }
 
-// - (void).cxx_destruct;
 @property(copy, nonatomic) NSString *itemsDirectory; // @synthesize itemsDirectory=_itemsDirectory;
 - (id)referenceImageWithID:(id)arg1 testCase:(id)arg2 error:(id *)arg3;
 
-// Remaining properties
-@property(readonly, copy) NSString *debugDescription;
-@property(readonly, copy) NSString *description;
-@property(readonly) unsigned long long hash;
-@property(readonly) Class superclass;
 
 @end
 
