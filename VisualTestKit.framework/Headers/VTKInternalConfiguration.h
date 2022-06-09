@@ -6,8 +6,6 @@
 
 #import <objc/NSObject.h>
 
-#import <VisualTestKit/NSCopying-Protocol.h>
-
 @class NSArray, NSMutableArray, NSString;
 @protocol VTKComparator, VTKReferenceItemsSource, VTKStoreManager;
 

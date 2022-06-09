@@ -4,8 +4,6 @@
 //  Copyright (C) 1997-2019 Steve Nygard.
 //
 
-#import <VisualTestKit/NSObject-Protocol.h>
-
 @class NSArray, NSString, XCTestCase;
 @protocol VTKAssertID, VTKStoreManagerSaveResult;
 

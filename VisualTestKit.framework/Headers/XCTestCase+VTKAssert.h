@@ -4,6 +4,7 @@
 
 
 @interface XCTestCase (VisualTestKit)
+@property(retain, nonatomic) VTKInternalConfiguration *VisualTestKitConfiguration;
 @property (nonatomic,nonnull,readonly) VTKAssert *VisualTestKitAssert API_AVAILABLE(ios(12.0)) API_UNAVAILABLE(watchos, macos, tvos);
 @end
 
