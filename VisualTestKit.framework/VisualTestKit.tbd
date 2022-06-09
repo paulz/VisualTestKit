@@ -1,14 +1,22 @@
 --- !tapi-tbd
 tbd-version:     4
-targets:         [ i386-ios-simulator, x86_64-ios-simulator ]
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, x86_64-maccatalyst, arm64e-maccatalyst ]
 uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
     value:           6B2FEE36-0E17-3892-8C93-8D0213A72761
+  - target:          x86_64-maccatalyst
+    value:           045A8142-E4EF-36A0-B368-9964ACEF6E65
+  - target:          arm64e-maccatalyst
+    value:           96B35066-B03F-3FE8-B7E1-3A188A166BAA
 install-name:    '/System/Library/PrivateFrameworks/VisualTestKit.framework/VisualTestKit'
 exports:
-  - targets:         [ i386-ios-simulator, x86_64-ios-simulator ]
-    symbols:         [ _NSStringFromVTKAssertID, _VTKID, ___VTKAssertView, ___VTKSetReferenceImagesDirectory ]
+  - targets:         [ i386-ios-simulator, x86_64-ios-simulator, x86_64-maccatalyst, arm64e-maccatalyst ]
+    symbols:         [ _NSStringFromVTKAssertID, _VTKID, ___VTKAddExclusionAreaAt,
+                       ___VTKAddHorizontalGuideAt, ___VTKAddSqureGuideAt, ___VTKAddVerticalGuideAt,
+                       ___VTKAssertView, ___VTKExclusionAreaStatusBar, ___VTKSetImageComparatorStrategy,
+                       ___VTKSetImageComparisonOptions, ___VTKSetReferenceImagesDirectory,
+                       ___VTKSetReferenceItemSourceType ]
     objc-classes:    [ VTKAssertID ]
 ...
