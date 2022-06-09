@@ -1,11 +1,14 @@
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 6B2FEE36-0E17-3892-8C93-8D0213A72761' ]
-platform:        ios
-install-name:    /System/Library/PrivateFrameworks/VisualTestKit.framework/VisualTestKit
-objc-constraint: none
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           6B2FEE36-0E17-3892-8C93-8D0213A72761
+install-name:    '/System/Library/PrivateFrameworks/VisualTestKit.framework/VisualTestKit'
 exports:
-  - archs:           [ i386, x86_64 ]
+  - targets:         [ i386-ios-simulator, x86_64-ios-simulator ]
     symbols:         [ _NSStringFromVTKAssertID, _VTKID, ___VTKAssertView, ___VTKSetReferenceImagesDirectory ]
     objc-classes:    [ VTKAssertID ]
 ...
