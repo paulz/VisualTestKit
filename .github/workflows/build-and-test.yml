@@ -16,7 +16,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-      - name: Swift 
+      - name: Swift Tools Version
+        run: swift package tools-version
       - name: Describe Package
         run: swift package describe
       - name: Build Package
