@@ -5,6 +5,9 @@ import PackageDescription
 
 let package = Package(
     name: "VisualTestKit",
+    platforms: [
+        .iOS(.v12),
+    ],
     products: [
         .library(
             name: "VisualTestKit",
