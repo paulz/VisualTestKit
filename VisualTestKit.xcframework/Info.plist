@@ -17,6 +17,7 @@
 			<array>
 				<string>arm64</string>
 				<string>x86_64</string>
+				<string>i386</string>
 			</array>
 		</dict>
 	</array>
