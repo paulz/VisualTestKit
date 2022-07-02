@@ -1,8 +1,10 @@
 # VisualTestKit
 
-This is a text-based dylib that will allow linking against the new private `VisualTestKit.framework` in iOS12. :grinning:
+[![Build](https://github.com/paulz/VisualTestKit/actions/workflows/build-and-test.yml/badge.svg)](https://github.com/paulz/VisualTestKit/actions/workflows/build-and-test.yml)
 
-I've made [a simple example project](https://github.com/cysp/VisualTestKitExample) that demonstrates how to use the framework.
+This is a text-based dylib that will allow linking against the private `VisualTestKit.framework` on iOS (available since iOS12).
+
+See [a simple example project](https://github.com/cysp/VisualTestKitExample) that demonstrates how to use the framework.
 
 For use from Objective-C you'll probably want some macros like:
 ```objc
@@ -42,6 +44,4 @@ For use from Objective-C you'll probably want some macros like:
 
 ```
 
-
-I haven't been able to get recording mode to work, but it should be enabled by setting the environment variable `VTK_RECORD_MODE` for a test run.
-As a workaround, it's not too difficult to copy the images produced during a test run (visible in the test results view) back to the source directory so that they can be added to the test bundle at the appropriate path.
+To use recording mode set the environment variable `VTK_RECORD_MODE` to `1` for a test run.
